@@ -1,28 +1,28 @@
 var edad,edad1;
-var cont=1;
-var cont1=1;
-var edadH = 1;
-var edadM= 1;
-var edad_joven=1000;
-var promedio_edadH=0;
-var promedio_edadM=0;
-var cantHombres=0;
-var cantMujeres=0;
+var Contador=1;
+var Contador1=1;
+var edadWomanen = 1;
+var edadWoman= 1;
+var EdadJove=1000;
+var PromedioMen=0;
+var PromedioWoman=0;
+var NumMen=0;
+var NumWoman=0;
 var cantPersonas=0;
-var sumaH=0;
-var sumaM=0;
+var SumaW=0;
+var SumaW=0;
 
 edad=prompt("Digite las edades de los hombres que asistieron a la fiesta.");
 
-while (edadH != 0 ){
-      document.write("Edad: "+cont);
-      if (edadH>=18){
-        if (edadH<edad_joven){
-            edad_joven=edadH;
+while (edadWomanen != 0 ){
+      document.write("Edad: "+Contador);
+      if (edadWomanen>=18){
+        if (edadWomanen<EdadJove){
+            EdadJove=edadWomanen;
         }
-        cantHombres++;
-        cont++;
-        sumaH=sumaH+edadH;
+        NumMen++;
+        Contador++;
+        SumaW=SumaW+edadWomanen;
       }else{
      document.write("No se permiten menores de edad a la fiesta.", "Error",0);
       }           
@@ -30,28 +30,28 @@ while (edadH != 0 ){
 
 edad1=prompt("Digite las edades de las mujeres que asistieron a la fiesta.");
 
-while (edadM != 0){
-    document.write("Edad: "+cont1);
+while (edadWoman != 0){
+    document.write("Edad: "+Contador1);
 
-      if (edadM>=18){
-        if (edadM<edad_joven){
-            edad_joven=edadM;
+      if (edadWoman>=18){
+        if (edadWoman<EdadJove){
+            EdadJove=edadWoman;
         }
-        cantMujeres++;
-        cont1++;
-        sumaM=sumaM+edadM;
+        NumWoman++;
+        Contador1++;
+        SumaW=SumaW+edadWoman;
       }else{
         document.write("No se permiten menores de edad a la fiesta.","Error",0);
       }           
 } 
-promedio_edadH=sumaH/cantHombres;
-promedio_edadM=sumaM/cantMujeres;
-cantPersonas=cantHombres+cantMujeres;
+PromedioMen=SumaW/NumMen;
+PromedioWoman=SumaW/NumWoman;
+cantPersonas=NumMen+NumWoman;
 
-document.write("La cantidad de personas que asistieron a la fiesta es: " + cantPersonas+"\n"+
-   "Cantidad de hombres: "+cantHombres+"\n"+
-   "Cantidad de mujeres: "+cantMujeres+"\n"+
-   "Promedio edad hombres: "+promedio_edadH+"\n"+
-   "Promedio edad mujeres: "+promedio_edadM+"\n"+
-   "Edad mas joven: "+edad_joven);    
+document.write("La cantidad de personas que asistieron a la fiesta es: " + cantPersonas+"<br>"+
+   "Cantidad de hombres: "+NumMen+"<br>"+
+   "Cantidad de mujeres: "+NumWoman+"<br>"+
+   "Promedio edad hombres: "+PromedioMen+"<br>"+
+   "Promedio edad mujeres: "+PromedioWoman+"<br>"+
+   "Edad mas joven: "+EdadJove);    
 
