@@ -9,8 +9,8 @@ var PromedioWoman=0;
 var NumMen=0;
 var NumWoman=0;
 var cantPersonas=0;
-var SumaW=0;
-var SumaW=0;
+var SumaSecuaW=0;
+var SumaSecuaW=0;
 
 edad=prompt("Digite las edades de los hombres que asistieron a la fiesta.");
 
@@ -22,7 +22,7 @@ while (edadWomanen != 0 ){
         }
         NumMen++;
         Contador++;
-        SumaW=SumaW+edadWomanen;
+        SumaSecuaW=SumaSecuaW+edadWomanen;
       }else{
      document.write("No se permiten menores de edad a la fiesta.", "Error",0);
       }           
@@ -39,13 +39,13 @@ while (edadWoman != 0){
         }
         NumWoman++;
         Contador1++;
-        SumaW=SumaW+edadWoman;
+        SumaSecuaW=SumaSecuaW+edadWoman;
       }else{
         document.write("No se permiten menores de edad a la fiesta.","Error",0);
       }           
 } 
-PromedioMen=SumaW/NumMen;
-PromedioWoman=SumaW/NumWoman;
+PromedioMen=SumaSecuaW/NumMen;
+PromedioWoman=SumaSecuaW/NumWoman;
 cantPersonas=NumMen+NumWoman;
 
 document.write("La cantidad de personas que asistieron a la fiesta es: " + cantPersonas+"<br>"+
